@@ -1,0 +1,9 @@
+models:
+  - name: ex_empo_t
+    description: Verificar que la columna sea con valor unico
+    columns:
+      - name: id_empleados
+        tests:
+          - unique
+          - not_null
+
