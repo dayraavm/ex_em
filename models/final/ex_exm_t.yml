@@ -1,8 +1,8 @@
 models:
-  - name: ex_empo_t
+  - name: empleados_final
     description: Verificar que la columna sea con valor unico
     columns:
-      - name: id_empleados
+      - name: id_empleado
         tests:
           - unique
           - not_null
