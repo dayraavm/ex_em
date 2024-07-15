@@ -1,0 +1,31 @@
+#source de cada raw
+sources:
+  - name: rawd_empleados
+    database: EX_EM
+    schema: EX_EMP
+    tables:
+      - name: empleados
+
+  - name: rawd_salario
+    database: EX_EM
+    schema: EX_EMP
+    tables:
+      - name: salario
+
+  - name: rawd_puesto
+    database: EX_EM
+    schema: EX_EMP
+    tables:
+      - name: puestos
+
+#Pruebas genericas
+models:
+  - name: empleados_final
+    description: Verificar que la columna sea con valor unico
+    columns:
+      - name: id_empleado
+        tests:
+          - unique
+          - not_null
+
+    
